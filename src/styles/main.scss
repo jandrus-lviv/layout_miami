@@ -1,7 +1,84 @@
 @import "utils";
-@import "fonts";
-@import "typography";
 
-body {
-  background: $c-gray;
+.page {
+  &__body {
+    font-family: "Inter", sans-serif;
+
+    margin: 0;
+    background: $c-gray;
+
+  }
+  
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 40px 20px;
+
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/header.jpg);
+
+  &__title {
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: 800;
+    font-style: italic;
+    color: #292929;
+    letter-spacing: -1.5px;
+
+    &::before {
+      content: "";
+      display: block;
+
+      background-size: cover;
+      background-position: center;
+      background-image: url(../images/above-title.svg);
+      width: 32px;
+      height: 27px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__call {
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/phone.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__menu-opener {
+    display: block;
+    width: 24px;
+    height: 18.67px;
+
+    background-image: url(../images/menu.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url(../images/menu_hover.svg);
+    }
+  }
+}
+
+.logo {
+  &__image {
+    height: 24px;
+  }
 }
