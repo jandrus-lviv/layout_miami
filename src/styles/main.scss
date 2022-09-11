@@ -32,28 +32,36 @@
     color: #292929;
     letter-spacing: -1.5px;
 
+    margin-bottom: 54px;
+
     &::before {
       content: "";
       display: block;
 
+      width: 32px;
+      height: 27px;
+      margin-bottom: 16px;
+
       background-size: cover;
       background-position: center;
       background-image: url(../images/above-title.svg);
-      width: 32px;
-      height: 27px;
     }
   }
 
   &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    gap: 20px;
+    place-items: center end;
   }
 
   &__call {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-right: 48px;
+
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 
     background-image: url(../images/phone.svg);
     background-size: cover;
@@ -62,9 +70,11 @@
   }
 
   &__menu-opener {
+    grid-area: 1 / 2 / 2 / 3;
+
     display: block;
-    width: 24px;
-    height: 18.67px;
+    width: 18px;
+    height: 12px;
 
     background-image: url(../images/menu.svg);
     background-size: cover;
@@ -79,6 +89,7 @@
 
 .logo {
   &__image {
-    height: 24px;
+    width: 130px;
+    height: 16.38px;
   }
 }
