@@ -52,11 +52,12 @@
     display: grid;
     grid: 1fr / 1fr 1fr;
     gap: 20px;
-    place-items: center end;
+    place-items: center start;
   }
 
   &__call {
     grid-area: 1 / 2 / 2 / 3;
+    justify-self: end;
     margin-right: 48px;
 
     display: block;
@@ -71,6 +72,7 @@
 
   &__menu-opener {
     grid-area: 1 / 2 / 2 / 3;
+    justify-self: end;
 
     display: block;
     width: 18px;
