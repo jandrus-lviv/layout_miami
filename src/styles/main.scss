@@ -1,28 +1,76 @@
 @import "utils";
 
+@mixin onDesktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
 .page {
   &__body {
     font-family: "Inter", sans-serif;
 
     margin: 0;
     background: $c-gray;
-
   }
-  
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.logo {
+  &__image {
+    width: 130px;
+    height: 16.38px;
 
-  box-sizing: border-box;
-  height: 100vh;
-  padding: 40px 20px;
+    @include onDesktop {
+      width: 190.08px;
+      height: 24px;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 20px;
+
+  @include onDesktop {
+    padding: 0 40px;
+  }
+}
+
+.icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  @include onDesktop {
+    width: 24px;
+    height: 24px;
+
+  }
 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-size: cover;
+  background-position: center;
   background-image: url(../images/header.jpg);
+
+  @include onDesktop {
+    background-image: url(../images/header-desktop.jpg);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 40px 0;
+  }
 
   &__title {
     font-size: 32px;
@@ -33,6 +81,12 @@
     letter-spacing: -1.5px;
 
     margin-bottom: 54px;
+
+    @include onDesktop {
+      font-size: 48px;
+
+      margin-bottom: 14px;
+    }
 
     &::before {
       content: "";
@@ -45,6 +99,15 @@
       background-size: cover;
       background-position: center;
       background-image: url(../images/above-title.svg);
+
+      @include onDesktop {
+        background-image: url(../images/above-title-desktop.svg);
+
+        width: 63px;
+        height: 76px;
+
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -60,38 +123,62 @@
     justify-self: end;
     margin-right: 48px;
 
-    display: block;
-    width: 18px;
-    height: 18px;
-
+    text-decoration: none;
     background-image: url(../images/phone.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+    @include onDesktop {
+      &::before {
+        content: "+1 234 555-55-55";
+        position: relative;
+        top: 50%;
+        transform: translate(-100%, -50%);
+  
+        display: block;
+        width: max-content;
+        padding-right: 12px;
+  
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: #292929;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &:hover::before {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
   }
 
   &__menu-opener {
     grid-area: 1 / 2 / 2 / 3;
     justify-self: end;
 
-    display: block;
-    width: 18px;
     height: 12px;
 
+    @include onDesktop {
+      height: 18.67px;
+      background-image: url(../images/menu-desktop.svg);
+
+    }
+
     background-image: url(../images/menu.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
     &:hover {
-      background-image: url(../images/menu_hover.svg);
-    }
-  }
-}
+      background-image: url(../images/menu-hover.svg);
 
-.logo {
-  &__image {
-    width: 130px;
-    height: 16.38px;
+      @include onDesktop {
+        width: 18.67px;
+        height: 24px;
+        background-image: url(../images/menu-hover-desktop.svg);
+        
+      }
+
+    }
+
   }
 }
