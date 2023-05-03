@@ -1,0 +1,11 @@
+.logo {
+  &__image {
+    width: 130px;
+    height: 16.38px;
+
+    @include onDesktop {
+      width: 190.08px;
+      height: 24px;
+    }
+  }
+}
