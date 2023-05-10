@@ -15,7 +15,13 @@
   font-size: 16px;
   line-height: 27px;
 
+  cursor: pointer;
   transition: all 0.3s;
+
+  &--primary {
+    color: #292929;
+    background-color: transparent;
+  }
 
   &:hover {
     background-color: transparent;
