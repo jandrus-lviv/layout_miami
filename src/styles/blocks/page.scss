@@ -10,6 +10,10 @@
   &__body {
     margin: 0;
     background: $colorWhite;
+
+    &--with-menu {
+      overflow: hidden;
+    }
   }
 
   &__menu {
@@ -39,7 +43,7 @@
   }
 
   &__section-title {
-    margin-bottom: 0 0 48px;
+    margin-bottom: 48px;
 
     font-weight: 700;
     font-size: 32px;
@@ -52,6 +56,10 @@
       margin-bottom: 64px;
       font-size: 48px;
       line-height: 48px;
+
+      &--contact-us {
+        margin-bottom: 48px;
+      }
     }
   }
 }

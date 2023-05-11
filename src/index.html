@@ -25,7 +25,7 @@
     <header class="header page__section">
       <div class="container">
         <div class="header__content">
-          <div class="top-actions">
+          <div class="header__top">
             <a href="/" class="logo">
               <img 
               class="logo__image"
@@ -35,7 +35,12 @@
     
             <a 
               href="tel:+123455555555"
-              class="icon icon--phone header__call"></a>
+              class="icon icon--phone"
+            >
+              <div class="icon__tooltip">
+                +1 234 555-55-55
+              </div>            
+            </a>
 
             <a 
               href="#menu" 
@@ -54,7 +59,7 @@
     <nav class="page__menu menu" id="menu">
       <div class="container">
         <div class="menu__content">
-          <div class="menu__top top-actions">
+          <div class="menu__top">
             <a href="/" class="logo">
               <img 
               class="logo__image"
@@ -109,7 +114,7 @@
           <h2 class="page__section-title">Recommended</h2>
 
           <div class="grid grid--desktop">
-            <div class="recommended__item grid__item grid__item--1-4">
+            <div class="recommended__item grid__item grid__item--desktop-1-4">
               <div class="article">
                 <div class="article__photo-container">
                   <img 
@@ -133,7 +138,7 @@
               </div>
             </div>
 
-            <div class="recommended__item grid__item grid__item--5-8">
+            <div class="recommended__item grid__item grid__item--desktop-5-8">
               <div class="article">
                 <div class="article__photo-container">
                   <img 
@@ -157,7 +162,7 @@
               </div>
             </div>
 
-            <div class="recommended__item grid__item grid__item--9-12">
+            <div class="recommended__item grid__item grid__item--desktop-9-12">
               <div class="article">
                 <div class="article__photo-container">
                   <img 
@@ -282,7 +287,7 @@
           </div>
 
           <div class="grid grid--desktop">
-            <div class="grid__item grid__item--5-8">
+            <div class="grid__item grid__item--desktop-5-8">
               <a href="#" class="button">
                 View all
               </a>
@@ -293,16 +298,14 @@
 
       <section class="page__section buy page__section--buy" id="buy">
         <div class="container">
-          <div class="grid grid--desktop">
-            <div class="grid__item grid__item--1-5">
-              <h2 class="buy__title">
-                Why buy direct
-                <br>
-                from Bose
-              </h2>
-            </div>
+          <div class="buy__content">
+            <h2 class="buy__title">
+              Why buy direct
+              <br>
+              from Bose
+            </h2>
             
-            <div class="grid__item grid__item--6-10">
+            <div class="buy__description">
               <div class="buy__subtitle">
                 Free 2-day shipping and returns
               </div>
@@ -329,10 +332,10 @@
 
       <section class="page__section contact-us" id="contacts">
         <div class="container">
-          <h2 class="page__section-title">Contact us</h2>
+          <h2 class="page__section-title page__section-title--contact-us">Contact us</h2>
 
           <div class="grid grid--desktop">
-            <div class="grid__item grid__item--1-6">
+            <div class="grid__item grid__item--desktop-1-5">
               <form action="#">
                 <input 
                   name="name"
@@ -363,10 +366,8 @@
                 </button>
               </form>
             </div>
-          </div>
 
-          <div class="grid grid--desktop">
-            <div class="grid__item grid__item--8-11">
+            <div class="grid__item grid__item--desktop-8-11">
               <div class="contact-us__info contact-us__info--first">
                 <div class="contact-us__info-title">
                   Phone

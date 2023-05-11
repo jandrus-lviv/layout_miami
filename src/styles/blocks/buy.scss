@@ -1,4 +1,12 @@
 .buy {
+  &__content {
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 24px;
+    }
+  }
+
   &__title {
     margin: 0 0 32px;
 
@@ -9,9 +17,17 @@
     color: #292929;
 
     @include onDesktop {
+      grid-column: 1 / 6;
       margin-bottom: 0;
       font-size: 48px;
       line-height: 48px;
+    }
+  }
+
+  &__description {
+    @include onDesktop {
+      grid-column: 6 / 11;
+
     }
   }
 
