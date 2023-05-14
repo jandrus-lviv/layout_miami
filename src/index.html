@@ -113,8 +113,8 @@
         <div class="container">
           <h2 class="page__section-title">Recommended</h2>
 
-          <div class="grid grid--desktop">
-            <div class="recommended__item grid__item grid__item--desktop-1-4">
+          <div class="recommended__container">
+            <div class="recommended__item">
               <div class="article">
                 <div class="article__photo-container">
                   <img 
@@ -138,7 +138,7 @@
               </div>
             </div>
 
-            <div class="recommended__item grid__item grid__item--desktop-5-8">
+            <div class="recommended__item">
               <div class="article">
                 <div class="article__photo-container">
                   <img 
@@ -162,7 +162,7 @@
               </div>
             </div>
 
-            <div class="recommended__item grid__item grid__item--desktop-9-12">
+            <div class="recommended__item">
               <div class="article">
                 <div class="article__photo-container">
                   <img 
@@ -192,102 +192,80 @@
       <section class="page__section gallery" id="categories">
         <div class="container">
           <h2 class="page__section-title">Browse Bose products by category</h2>
-
-          <div class="gallery__place place">
-            <div class="place__photos">
-              <div class="grid">
-                <div class="grid__item grid__item--desktop-1-8">
-                  <div class="place__photo-container">
-                    <img 
-                      src="images/photo-1-desktop.jpg" 
-                      alt="Place 1" 
-                      class="place__photo"
-                    >
-                  </div>
-
-                </div>
-                
-                <div class="grid__item grid__item--desktop-9-12">
-                  <div class="place__photo-container">
-                    <img
-                      src="images/photo-2-desktop.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
+          <div class="gallery__category category">
+            <div class="category__photos">
+              <div class="category__photo-container category__photo-container--big">
+                <img 
+                  src="images/photo-1-desktop.jpg" 
+                  alt="category 1" 
+                  class="category__photo"
+                >
+              </div>
+            
+              <div class="category__photo-container category__photo-container--small">
+                <img
+                  src="images/photo-2-desktop.jpg"
+                  alt="category 1"
+                  class="category__photo"
+                >
               </div>
             </div>
 
-            <div class="place__description">
+            <div class="category__description">
               Headphones & earbuds
             </div>
           </div>
 
-          <div class="gallery__place place">
-            <div class="place__photos">
-              <div class="grid">
-                <div class="grid__item grid__item--desktop-1-8">
-                  <div class="place__photo-container">
-                    <img 
-                      src="images/photo-3-desktop.jpg" 
-                      alt="Place 1" 
-                      class="place__photo"
-                    >
-                  </div>
+          <div class="gallery__category category">
+            <div class="category__photos">
+              <div class="category__photo-container category__photo-container--big">
+                <img 
+                  src="images/photo-3-desktop.jpg" 
+                  alt="category 1" 
+                  class="category__photo"
+                >
+              </div>
 
-                </div>
-                
-                <div class="grid__item grid__item--desktop-9-12">
-                  <div class="place__photo-container">
-                    <img
-                      src="images/photo-4-desktop.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
+              <div class="category__photo-container category__photo-container--small">
+                <img
+                  src="images/photo-4-desktop.jpg"
+                  alt="category 1"
+                  class="category__photo"
+                >
               </div>
             </div>
 
-            <div class="place__description">
+            <div class="category__description">
               Speakers
             </div>
           </div>
 
-          <div class="gallery__place place">
-            <div class="place__photos">
-              <div class="grid">
-                <div class="grid__item grid__item--desktop-1-4">
-                  <div class="place__photo-container">
-                    <img 
-                      src="images/photo-5-desktop.jpg" 
-                      alt="Place 1" 
-                      class="place__photo"
-                    >
-                  </div>
+          <div class="gallery__category category">
+            <div class="category__photos">
+              <div class="category__photo-container category__photo-container--small">
+                <img 
+                  src="images/photo-5-desktop.jpg" 
+                  alt="category 1" 
+                  class="category__photo"
+                >
+              </div>
 
-                </div>
-                
-                <div class="grid__item grid__item--desktop-5-12">
-                  <div class="place__photo-container">
-                    <img
-                      src="images/photo-6-desktop.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
+              <div class="category__photo-container category__photo-container--big">
+                <img
+                  src="images/photo-6-desktop.jpg"
+                  alt="category 1"
+                  class="category__photo"
+                >
               </div>
             </div>
 
-            <div class="place__description">
+            <div class="category__description">
               Audio sunglasses
             </div>
           </div>
 
-          <div class="grid grid--desktop">
-            <div class="grid__item grid__item--desktop-5-8">
+          <div class="gallery__button-container">
+            <div class="gallery__button">
               <a href="#" class="button">
                 View all
               </a>
@@ -334,26 +312,26 @@
         <div class="container">
           <h2 class="page__section-title page__section-title--contact-us">Contact us</h2>
 
-          <div class="grid grid--desktop">
-            <div class="grid__item grid__item--desktop-1-5">
+          <div class="contact-us__content">
+            <div class="contact-us__inputs">
               <form action="#">
                 <input 
                   name="name"
                   type="text"
-                  placeholder="Name"
+                  categoryholder="Name"
                   class="contact-us__field form-field"
                 >
                 
                 <input 
                   name="email"
-                  placeholder="Email"
+                  categoryholder="Email"
                   type="email"
                   class="contact-us__field form-field"
                 >
 
                 <textarea
                   name="message"
-                  placeholder="Message" 
+                  categoryholder="Message" 
                   class="
                     contact-us__field 
                     contact-us__field--last
@@ -367,7 +345,7 @@
               </form>
             </div>
 
-            <div class="grid__item grid__item--desktop-8-11">
+            <div class="contact-us__contacts">
               <div class="contact-us__info contact-us__info--first">
                 <div class="contact-us__info-title">
                   Phone

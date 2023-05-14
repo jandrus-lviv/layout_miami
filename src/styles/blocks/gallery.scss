@@ -1,9 +1,27 @@
 .gallery {
-  &__place {
+  &__category {
     margin-bottom: 40px;
 
     @include onDesktop {
       margin-bottom: 64px;
     }
   }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    width: 100%;
+
+    @include onTablet {
+      width: 392px;
+    }
+
+    @include onDesktop {
+      width: 324px;
+    }
+  }
+
 }

@@ -1,4 +1,38 @@
 .contact-us {
+  &__content {
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 24px;
+    }
+
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 24px;
+    }
+  }
+
+  &__inputs {
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__contacts {
+    @include onTablet {
+      grid-column: 4 / 7;
+    }
+
+    @include onDesktop {
+      grid-column: 8 / 11;
+    }
+  }
+
   &__info {
     margin: 0 0 24px;
 

@@ -1,4 +1,11 @@
 .recommended {
+  &__container {
+    @include onDesktop {
+      display: flex;
+      gap: 24px;
+    }
+  }
+
   &__item {
     margin-bottom: 48px;
 

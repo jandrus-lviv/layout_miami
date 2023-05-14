@@ -1,4 +1,15 @@
-.place {
+.category {
+  &__photos {
+    margin-bottom: 16px;
+
+    display: flex;
+    gap: 20px;
+    
+    @include onTablet {
+      gap: 24px;
+    }
+  }
+
   &__photo-container {
     position: relative;
 
@@ -13,9 +24,26 @@
       padding-bottom: 100%;
     }
 
+    @include onTablet {
+      height: 187px;
+      padding-bottom: 0;
+    }
+
     @include onDesktop {
       height: 320px;
       padding-bottom: 0;
+    }
+
+    &--big {
+      @include onTablet {
+        flex-grow: 2;
+      }
+    }
+
+    &--small {
+      @include onTablet {
+        flex-shrink: 2;
+      }
     }
   }
 
@@ -26,10 +54,6 @@
 
     object-fit: cover;
     object-position: center;
-  }
-
-  &__photos {
-    margin-bottom: 16px;
   }
 
   &__description {
