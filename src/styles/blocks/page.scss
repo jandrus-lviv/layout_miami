@@ -33,6 +33,16 @@
   &__section {
     margin-bottom: 120px;
 
+    &--recommended {
+      @include onTablet {
+        margin-bottom: 128px;
+      }
+  
+      @include onDesktop {
+        margin-bottom: 120px;
+      }
+    }
+    
     &--buy {
       margin-bottom: 110px;
 
@@ -52,14 +62,19 @@
     letter-spacing: -1.5px;
     color: #292929;
 
-    @include onDesktop {
+    @include onTablet {
       margin-bottom: 64px;
-      font-size: 48px;
-      line-height: 48px;
+      font-size: 40px;
+      line-height: 40px;
 
       &--contact-us {
         margin-bottom: 48px;
       }
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
     }
   }
 }

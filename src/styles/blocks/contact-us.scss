@@ -39,7 +39,7 @@
     &--first {
       margin-top: 48px;
 
-      @include onDesktop {
+      @include onTablet {
         margin-top: 0;
       }
     }

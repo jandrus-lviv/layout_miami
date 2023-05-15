@@ -1,0 +1,32 @@
+.article {
+  &__photo-container {
+    margin-bottom: 32px;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292929;
+  }
+
+  &__subtitle {
+    margin: 0 0 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292929;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292929;
+  }
+}
