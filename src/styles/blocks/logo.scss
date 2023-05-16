@@ -1,9 +1,17 @@
 .logo {
+  display: flex;
+  align-items: center;
+  height: 22.4px;
+
+  @include onTablet {
+    height: 29.6px;
+  }
+
   &__image {
     width: 130px;
     height: 16.38px;
 
-    @include onDesktop {
+    @include onTablet {
       width: 190.08px;
       height: 24px;
     }

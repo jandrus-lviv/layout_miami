@@ -3,6 +3,10 @@
   background-position: center;
   background-image: url(../images/header.jpg);
 
+  @include onTablet {
+    background-image: url(../images/header-tablet.jpg);
+  }
+
   @include onDesktop {
     background-image: url(../images/header-desktop.jpg);
   }
@@ -18,7 +22,15 @@
   
     box-sizing: border-box;
     height: 100vh;
-    padding: $headerVerticalPadding 0;
+    padding: 40px 0 94px;
+
+    @include onTablet {
+      padding: 52px 0 40px;
+    }
+
+    @include onDesktop {
+      padding-bottom: 64px;
+    }
   }
 
   &__title {
@@ -28,13 +40,14 @@
     font-style: italic;
     color: #292929;
     letter-spacing: -1.5px;
+    margin: 0;
 
-    margin-bottom: 54px;
+    @include onTablet {
+      font-size: 40px;
+    }
 
     @include onDesktop {
       font-size: 48px;
-
-      margin-bottom: 14px;
     }
 
     &::before {
@@ -49,12 +62,16 @@
       background-position: center;
       background-image: url(../images/above-title.svg);
 
-      @include onDesktop {
+      @include onTablet {
         background-image: url(../images/above-title-desktop.svg);
 
         width: 63px;
         height: 76px;
 
+        margin-bottom: 40px;
+      }
+
+      @include onDesktop {
         margin-bottom: 32px;
       }
     }
