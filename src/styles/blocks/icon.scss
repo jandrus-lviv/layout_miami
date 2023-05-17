@@ -76,6 +76,7 @@
 
   &--cross {
     grid-column: 3 / 4;
+    justify-self: center;
     
     background-image: url(../images/cross.svg);
 

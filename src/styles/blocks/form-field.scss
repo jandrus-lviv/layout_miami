@@ -6,9 +6,14 @@
   border: 1px solid transparent;
   border-radius: 40px;
   padding: 14px 16px;
-  color: #292929;
   background-color: #f8f8fa;
-  
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #292929;
+    
   &::placeholder {
     font-weight: 400;
     font-size: 14px;

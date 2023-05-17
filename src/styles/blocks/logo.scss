@@ -1,13 +1,16 @@
 .logo {
-  display: flex;
-  align-items: center;
-  height: 22.4px;
+  position: relative;
+  height: 18px;
 
   @include onTablet {
-    height: 29.6px;
+    height: 24px;
   }
 
   &__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
     width: 130px;
     height: 16.38px;
 
