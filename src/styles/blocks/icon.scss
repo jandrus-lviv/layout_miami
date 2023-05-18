@@ -2,7 +2,7 @@
   position: relative;
   display: block;
 
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -41,7 +41,7 @@
     width: 18px;
     height: 12px;
     background-image: url(../images/menu.svg);
-
+    
     @include onTablet {
       width: 24px;
       height: 18.67px;
