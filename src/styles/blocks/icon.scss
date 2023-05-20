@@ -40,23 +40,23 @@
 
     width: 18px;
     height: 12px;
-    background-image: url(../images/menu.svg);
+    background-image: url(../images/icons/menu.svg);
     
     @include onTablet {
       width: 24px;
       height: 18.67px;
-      background-image: url(../images/menu-desktop.svg);
+      background-image: url(../images/icons/menu-desktop.svg);
     }
 
     &:hover {
       width: 18px;
       height: 12px;
-      background-image: url(../images/menu-hover.svg);
+      background-image: url(../images/icons/menu-hover.svg);
 
       @include onTablet {
         width: 24px;
         height: 18.67px;
-        background-image: url(../images/menu-hover-desktop.svg);
+        background-image: url(../images/icons/menu-hover-desktop.svg);
       }
     }
   }
@@ -66,7 +66,7 @@
 
     width: 18px;
     height: 18px;
-    background-image: url(../images/phone.svg);
+    background-image: url(../images/icons/phone.svg);
     
     @include onTablet {
       width: 24px;
@@ -78,7 +78,7 @@
     grid-column: 3 / 4;
     justify-self: center;
     
-    background-image: url(../images/cross.svg);
+    background-image: url(../images/icons/cross.svg);
 
     width: 16px;
     height: 16px;
