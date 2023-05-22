@@ -1,3 +1,7 @@
+/* h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+} */
+
 .page {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -6,7 +10,7 @@
   color: #3e3e3e;
 
   scroll-behavior: smooth;
-  
+
   &__body {
     margin: 0;
     background: $colorWhite;

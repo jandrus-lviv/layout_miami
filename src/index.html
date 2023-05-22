@@ -5,20 +5,29 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
+    <title>Bose Speakers, Headphones, and Soundbars for Unmatched Audio Quality</title>
     <link
       rel="preconnect"
-      href="https://fonts.googleapis.com">
+      href="https://fonts.googleapis.com"
+    >
+
     <link 
       rel="preconnect"
       href="https://fonts.gstatic.com"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+    >
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    >
+
     <link
       rel="stylesheet"
-      href="./styles/main.scss">
+      href="styles/main.scss"
+    >
+    
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
     <script src="scripts/main.js" defer></script>
   </head>
   <body class="page__body">
@@ -475,12 +484,16 @@
 
           <div class="contact-us__content">
             <div class="contact-us__inputs">
-              <form action="#">
+              <form 
+                action="#"
+                id="contactUs"
+              >
                 <label for="name"></label>
                 <input 
                   id="name"
                   name="name"
                   type="text"
+                  required
                   placeholder="Name"
                   class="contact-us__field form-field"
                 >
@@ -489,6 +502,7 @@
                 <input 
                   id="email"
                   name="email"
+                  required
                   placeholder="Email"
                   type="email"
                   class="contact-us__field form-field"
@@ -496,6 +510,7 @@
 
                 <textarea
                   name="message"
+                  required
                   placeholder="Message" 
                   class="
                     contact-us__field 
@@ -544,6 +559,7 @@
 
                 <a
                   href="https://goo.gl/maps/jZTck6w2W1NgwDAX8" 
+                  target="_blank"
                   class="contact-us__info-link"
                 >
                 400 first ave.<br>
